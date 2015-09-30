@@ -1,0 +1,167 @@
+﻿html { 
+	background: url(../images/Piano.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}	
+
+.container {
+	padding: 15px 0px!important;
+	width: 100%!important;
+	background-color: transparent!important;
+}
+
+#container {
+	width:600px;
+	float:right;
+	position:relative;
+}
+
+.signature {
+	position:relative;
+	display:inline;
+	right:10%;
+}
+
+.signature img {
+	width:500px;
+	height:70px;
+}
+
+.pianist {
+	position:relative;
+	display:inline;
+	left:50%;
+}
+
+.pianist img {
+	width:200px;
+}
+
+ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+	display: inline-block;
+}
+
+li {
+	display:inline;
+	padding:25px;
+}
+
+a {
+	color:rgb(255, 255, 255);
+	text-decoration:none!important;
+	font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+	font-size: .9em;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #FFFF99;
+}
+
+#resume_box {
+	position: relative;
+	width: 800px;
+	height: 400px;
+	left: 50%;
+	margin-top: 9%;
+	margin-left: -400px;
+	background-color: rgba(0, 0, 0, .9);
+	border-width: 3px;
+	border-color: white;
+	border-style: double;
+	overflow-y: scroll;
+	display: none;
+}
+
+#resume_box img {
+	position: absolute;
+	width: 450px;
+	height: 550px;
+	left: 50%;
+	margin-left: -225px;
+}
+
+#media_box {
+	position: relative;
+	width: 800px;
+	height: 400px;
+	left: 50%;
+	margin-top: 9%;
+	margin-left: -400px;
+	background-color: rgba(0, 0, 0, .9);
+	border-width: 3px;
+	border-color: white;
+	border-style: double;
+	overflow-y: scroll;
+	text-align: center;
+	color: white;
+	font-size: 50px;
+	font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+	display: none;
+}
+
+.by {
+	font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+	font-size: 18px;
+}
+
+#media_box p {
+	font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+	font-size: 22px;
+}
+
+#media_box hr {
+	margin-top: -2px;
+}
+
+.sleepaway {
+	font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+	font-size: 18px;
+	display: none;
+}
+
+.bob {
+	font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+	font-size: 18px;
+	display: none;
+}
+
+#contact_box {
+	position: relative;
+	width: 800px;
+	height: 406px;
+	left: 50%;
+	margin-top: 9%;
+	margin-left: -400px;
+	background-color: rgba(0, 0, 0, .9);
+	border-width: 3px;
+	border-color: white;
+	border-style: double;
+	overflow-y: scroll;
+	display: none;
+}
+
+#contact_box h2 {
+	line-height: 60px;
+	text-align: center;
+	font-size: 40px;
+	color: white;
+	font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+}
+
+form {
+	text-align: center;
+}
+
+input {
+	margin-top: 15px;
+}
+
+textarea {
+	margin-top: 15px;
+}

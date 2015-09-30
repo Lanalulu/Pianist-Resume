@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<link type="text/css" rel="stylesheet" href="css/style.css"/>
+	<title>Edmund Abbott ~ Pianist</title>
+</head>
+
+<body class="container">
+
+<ul>
+	<li class="home"><a href="#">Home</a></li>
+	<li class="resume"><a href="#">Résumé</a></li>
+	<li class="media"><a href="#">Media</a></li>
+	<li class="contact"><a href="#">Contact</a></li>
+</ul>
+
+<div id="container">
+
+<div class="signature">
+<img src="images/signature.png" alt="Edmund Abbott"/></div>
+
+<div class="pianist">
+<img src="images/signature-pianist.png" alt="pianist"/></div>
+</div>
+
+<div id="resume_box"><img src="images/Resume.png"/></div>
+
+<div id="media_box">Sample Audio<br><hr width="300px"></hr>
+	<div class="by"><em>by Edmund Abbott</em></div>
+	<audio controls>
+  		<source src="sounds/SleepAway.ogg" type="audio/ogg">
+  		<source src="sounds/SleepAway.mp3" type="audio/mpeg">
+	</audio> 
+	<p class="sleepaway"><em>"Sleep Away"</em><div class="bob"><em>Original artist: Bob Acri</em></div></p>
+</div>
+
+<div id="contact_box">
+	<h2>For business inquiries only:</h2>
+	<form action="MAILTO:someone@example.com" method="post" enctype="text/plain">
+		Name: <input type="text" name="name" value="Your name"><br>
+		E-mail: <input type="text" name="mail" value="youremail@example.com"><br>
+		<textarea rows="6" cols="44" name="Comment">-Message here-</textarea><br><br>
+		<input type="submit" value="Send">
+		<input type="reset" value="Clear">
+	</form>
+</div>
+
+<script>
+$(document).ready(function() {
+	$('.resume').click(function() {
+		$('#media_box').hide();
+		$('#contact_box').hide();
+		$('#resume_box').slideDown();
+	});	
+	$('.media').click(function() {
+		$('#resume_box').hide();
+		$('#contact_box').hide();
+		$('#media_box').slideDown();
+	});	
+	$('.contact').click(function() {
+		$('#resume_box').hide();
+		$('#media_box').hide();
+		$('#contact_box').slideDown();
+	});	
+	$('.home').click(function() {
+		$('#resume_box').hide();
+		$('#contact_box').hide();
+		$('#media_box').hide();
+	});	
+	$('audio').one( "click", function() {
+		$('.sleepaway').fadeIn(1000).fadeOut(5000);
+		setTimeout(function(){
+			$('.bob').fadeIn(1000).fadeOut(5000);
+		}, 6000);
+	});	
+});
+
+</script>
+
+</body>
+</html>
